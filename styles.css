@@ -1,0 +1,56 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* 제목 스타일 */
+  h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #0078d7;
+  }
+  
+  /* 게임 컨테이너 스타일 */
+  #game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 기본 4칸 */
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 450px;
+  }
+  
+  /* 블록 스타일 */
+  .block {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  /* 숨겨진 블록 스타일 */
+  .block.hidden {
+    background-color: lightgray;
+    color: transparent;
+    cursor: default;
+  }
+  
+  /* 블록 클릭 효과 */
+  .block:active {
+    transform: scale(0.95); /* 클릭 시 살짝 줄어듦 */
+  }
+  

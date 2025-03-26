@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Matching Game</title>
+  <style>
+    #game {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      gap: 10px;
+      width: 430px;
+      margin: 0 auto;
+    }
+    .block {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hidden {
+      background-color: lightgray;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Block Matching Game</h1>
+  <div id="game"></div>
+  <script src="game.js"></script>
+</body>
+</html>
